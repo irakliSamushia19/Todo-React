@@ -1,0 +1,152 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  background-color: white;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.modalbutton{
+  border: none;
+  border-radius: 10px;
+  background-color: #6C63FF;
+}
+
+.addtodobutton{
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+   background-color: #6C63FF;
+   color: white;
+}
+
+.todoitembutton{
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6C63FF;
+  color: white;
+}
+.check{
+  width: 30px;
+  height: 30px;
+}
+.todotext{
+  margin-right: 200px;
+  font-size: 25px;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 400px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #6C63FF;
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+  margin-left: 10px;
+  height: 41px;
+  border-radius: 10px;
+  border: 1px solid #6C63FF;
+}
+
+.dark-mode-btn {
+  background-color: #6C63FF;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  border-radius: 10px;
+}
+
+/* Dark Mode*/
+
+.App.dark {
+  background-color: #252525;
+  color: white;
+}
+.App.dark body{
+  background-color: #252525;
+}
+
+.App.dark .todo-item {
+  background-color: #252525;
+  color: white;
+  border-radius: 5px;
+}
+
+.App.dark .modal-content {
+  background-color: #252525;
+  color: white;
+}
+
+.App.dark .filters {
+  color: white;
+}
+
+.App.dark input[type="text"] {
+  background-color: #252525;
+  color: white;
+  border: 1px solid #6C63FF;
+}
+
+.App.dark select {
+  background-color: #252525;
+  color: white;
+}
+
+.App.dark .dark-mode-btn {
+  background-color: #6C63FF;
+  color: white;
+}
